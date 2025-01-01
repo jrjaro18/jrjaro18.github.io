@@ -10,8 +10,8 @@ function App() {
         >
           Hello I am Rohan Jaiswal!
         </div>
-        <a href="https://linkedin.com/in/jrjaro18" 
-        className='lg:inline none text-transparent hover:bg-green-400 px-3 py-2 text-base hover:text-neutral-950 hover:shadow-2xl hover:shadow-green-300 duration-500 hover:cursor-pointer font-montserrat'>
+        <a href="https://linkedin.com/in/jrjaro18"
+          className='lg:inline none text-transparent hover:bg-green-400 px-3 py-2 text-base hover:text-neutral-950 hover:shadow-2xl hover:shadow-green-300 duration-500 hover:cursor-pointer font-montserrat'>
           i'm Steeeve :P
         </a>
       </div>
@@ -31,7 +31,26 @@ function App() {
         </li>
       </ul>
 
-      <div className='mt-6 flex gap-2 flex-row flex-wrap text-base'>
+      <div className='relative mt-6 z-0 '>
+        <div className='absolute bg-green-300 w-full h-full blur-3xl z-0 rounded-full top-0 left-0'></div>
+        {/* Overlay for better text contrast */}
+        <div className='absolute bg-black bg-opacity-50 w-full h-full rounded-lg top-0 left-0'></div>
+        {/* Content */}
+        <div className='relative flex flex-row gap-4 p-4 rounded-lg z-10 lg:flex-nowrap flex-wrap-reverse items-center justify-between'>
+          <div className=''>
+            <img src={image} alt='steeeve' className='' />
+          </div>
+          <div className='relative z-10 p-6 text-white font-medium text-justify'>
+            "Rohan Jaiswal—a final-year Computer Science student from SPIT, Mumbai. He’s a backend enthusiast, a Golang pro, and a full-stack developer passionate about microservices, blockchain, and building scalable systems. Whether it’s mobile apps in React Native or clean, efficient code, Rohan’s always pushing boundaries and diving into cutting-edge tech. Let’s hear it for Rohan!"
+            <div className='mt-2 text-sm text-end mr-3'>
+              ~ ChatGPT
+            </div>
+          </div>
+        </div>
+      </div>
+      <span className='md:inline md:text-transparent md:hover:text-green-100 md:text-sm md:ml-2 md:duration-1000 hidden'>this was accidental</span>
+
+      <div className='mt-1 flex gap-2 flex-row flex-wrap text-base'>
         <div>
           Connect with me on:
         </div>
@@ -66,19 +85,6 @@ function App() {
           Resume
         </a>
       </div>
-      <div className='relative w-6/12 mt-6 z-0'>
-        <div className='absolute bg-green-300 w-full h-full blur-3xl z-0 rounded-full top-0 left-0'></div>
-        {/* Overlay for better text contrast */}
-        <div className='absolute bg-black bg-opacity-50 w-full h-full rounded-lg top-0 left-0'></div>
-        {/* Content */}
-        <div className='relative z-10 p-6 text-white font-medium'>
-          "Rohan Jaiswal—a final-year Computer Science student from SPIT, Mumbai. He’s a backend enthusiast, a Golang pro, and a full-stack developer passionate about microservices, blockchain, and building scalable systems. Whether it’s mobile apps in React Native or clean, efficient code, Rohan’s always pushing boundaries and diving into cutting-edge tech. Let’s hear it for Rohan!"
-          <div className='mt-2 text-sm text-end mr-3'>
-            ~ ChatGPT
-          </div>
-        </div>
-      </div>
-      <span className='md:inline md:text-transparent md:hover:text-green-100 md:text-sm md:ml-2 md:duration-1000 hidden'>this was accidental</span>
     </div>
   )
 }
