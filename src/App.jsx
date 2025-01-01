@@ -11,7 +11,7 @@ function App() {
           Hello I am Rohan Jaiswal!
         </div>
         <a href="https://linkedin.com/in/jrjaro18"
-          className='lg:inline none text-transparent hover:bg-red-400 px-3 py-2 text-base hover:text-neutral-950 hover:shadow-2xl hover:shadow-red-300 duration-500 hover:cursor-pointer font-montserrat'>
+          className='lg:inline hidden text-transparent hover:bg-red-400 px-3 py-2 text-base hover:text-neutral-950 hover:shadow-2xl hover:shadow-red-300 duration-500 hover:cursor-pointer font-montserrat'>
           i'm Steeeve :P
         </a>
       </div>
