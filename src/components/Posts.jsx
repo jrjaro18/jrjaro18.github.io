@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import Post from '../pages/Post'
 
 const Posts = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className='mt-5'>
@@ -10,11 +13,15 @@ const Posts = () => {
         <div className='mt-2 md:justify-start flex flex-wrap gap-[2%] gap-y-2'>
           {
             posts.map((post, index) => (
-              <div key={index} className='h-40 relative md:w-[32%] w-full border-[1px] p-2 cursor-pointer select-none active:scale-[0.985] duration-300 active:translate-y-0 hover:-translate-y-1 my-1'>
+              <div key={index} className='h-40 relative md:w-[32%] w-full border-[2px] border-black dark:border-slate-50 p-2 cursor-pointer select-none active:scale-[0.98] duration-300 hover:-translate-y-1 my-1'
+                onClick={() => {
+                  navigate(`/post/${index}`)
+                }}>
+              
                 <div className='text-justify overflow-hidden text-ellipsis line-clamp-4'>
                   {post.title}
                 </div>
-                <div className='absolute bottom-2 right-2 text-lighter-blue'>
+                <div className='absolute bottom-2 right-2 text-dark-blue dark:text-light-blue'>
                   {post.date}
                 </div>
               </div>

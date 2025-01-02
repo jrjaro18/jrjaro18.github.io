@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import image from "./assets/steeeve.png"
+import image from "../assets/steeeve.png"
 
 function OldHome() {
   return (
