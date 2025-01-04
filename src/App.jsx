@@ -35,7 +35,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route path='*' element={<NewHome />} />
         <Route path='/post/:id' element={<Post />} />
