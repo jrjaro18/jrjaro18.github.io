@@ -3,12 +3,9 @@
   <head>
     <meta http-equiv="refresh" content="0;url=/" />
     <script>
-      // Get the base path of the repository
-      const base = '/'; // Replace with your repository name or leave empty if deployed at root
-      // Get the current path
-      const redirectTo = window.location.pathname + window.location.search + window.location.hash;
-      // Redirect while preserving the path
-      window.location.replace(base + redirectTo);
+      // Redirect to the base URL while preserving the path
+      const redirectTo = window.location.pathname;
+      window.location.replace('https://jrjaro18.github.io/' + redirectTo);
     </script>
   </head>
   <body>
