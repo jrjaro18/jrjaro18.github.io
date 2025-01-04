@@ -41,7 +41,7 @@ const Auth = () => {
                         (e) => setPassword(e.target.value)
                     }
                 />
-                <div className='w-80 border-[1px] my-2 border-light-blue dark:border-darker-blue rounded-lg' />
+                <div className='w-80 my-2 border-t-[1px] border-light-blue dark:border-darker-blue rounded-lg' />
                 <button
                     className='bg-light-blue dark:bg-darker-blue hover:bg-dark-blue text-white p-2 rounded-md active:scale-95 duration-300 w-80'
                     onClick={onSubmit}

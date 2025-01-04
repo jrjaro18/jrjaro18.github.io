@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     console.log('adding keyboard shortcut')
     const handleKeyDown = (e) => {
-      if (e.shiftKey && e.key === 'T') {
+      if (e.shiftKey && e.key === 'X') {
         toggleTheme()
       }
     }
@@ -37,7 +37,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='*' element={<NewHome />} />
+        <Route path='/' element={<NewHome />} />
         <Route path='/post/:id' element={<Post />} />
         <Route path='/old' element={<OldHome />} />
         <Route path='/auth' element={<SB_Auth />} />

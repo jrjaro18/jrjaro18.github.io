@@ -16,3 +16,23 @@
     background-color: lightskyblue;
     border-radius: 30px;
 }
+
+input::-ms-reveal {
+    filter: invert(50%);
+}
+
+h1 {
+  font-size: large;
+  font-weight:700;
+}
+
+h2 {
+    font-size:larger;
+    font-weight:700;
+    color:rgb(59,130,246);
+}
+
+h3 {
+    font-size: large;
+    font-weight:700;
+}

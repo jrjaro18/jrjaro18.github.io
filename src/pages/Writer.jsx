@@ -21,6 +21,28 @@ const Writer = () => {
     checkSession()
   }, [])
 
+  const onPressSubmit = async () => {
+    if (title.length < 10) {
+      alert('Title must be at least 3 characters')
+      return
+    } 
+    if (value.length < 100) {
+      alert('Content must be at least 10 characters')
+      return
+    }
+    const { data, error } = await supabase.from('Blogs').insert([
+      { title, content: value }
+    ])
+    if (error) {
+      console.log('error', error)
+      alert(error)
+    } else {
+      alert('submitted')
+      setTitle('')
+      setValue('')
+    }
+  }
+
   const onPressLogout = async () => {
     const { error } = await supabase.auth.signOut()
     if (error) {
@@ -41,7 +63,7 @@ const Writer = () => {
 
       <input
         type={'text'}
-        className='rounded-none p-2 outline-none bg-transparent w-[98vw] border-[1px] border-slate-300 text-dark-blue dark:text-white mb-2'
+        className='rounded-none p-2 outline-none bg-transparent w-[98vw] border-[1px] border-slate-300 dark:text-white mb-2'
         placeholder='Title'
         onChange={
           (e) => setTitle(e.target.value)
@@ -51,7 +73,7 @@ const Writer = () => {
 
       <button
         className='bg-light-blue dark:bg-darker-blue hover:bg-dark-blue text-white w-44 p-2 rounded-md active:scale-95 duration-500'
-        onClick={onPressLogout}
+        onClick={onPressSubmit}
       >Submit</button>
 
     </div>
@@ -64,7 +86,7 @@ function TextEditor ({ value, setValue }) {
 
   return <ReactQuill style={{
     width: "98vw",
-    height: "80vh",
+    height: "75vh",
     marginBottom: "8vh",
     color: theme == "dark" ? "white" : "black",
 
