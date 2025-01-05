@@ -21,11 +21,10 @@ function App() {
     }
   }
 
-  // how to add keyboard shortcut for toggling theme
   useEffect(() => {
     console.log('adding keyboard shortcut')
     const handleKeyDown = (e) => {
-      if (e.shiftKey && e.key === 'X') {
+      if (e.shiftKey && e.key === 'Enter') {
         toggleTheme()
       }
     }
