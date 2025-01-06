@@ -29,7 +29,8 @@ const Post = () => {
   }, [])
 
   return (
-    <div className='selection:bg-light-blue bg-slate-50 min-h-screen overflow-hidden text-black sm:px-14 px-4 pt-2 font-montserrat dark:bg-slate-950 dark:text-white pb-10'>
+    <div  id='post' className='selection:bg-light-blue bg-slate-50 min-h-screen overflow-hidden text-black sm:px-20
+     px-2 sm:pt-6 pt-3 font-montserrat dark:bg-slate-950 dark:text-white pb-10'>
       <div className='text-2xl my-2 text-justify'>
         {
           !loading ? data.title : (
@@ -42,9 +43,9 @@ const Post = () => {
         }
       </div>
       <div
-        className='flex flex-col justify-end items-end my-4'
+        className='flex flex-col justify-end items-end sm:mb-6 sm:mt-6 my-4'
       >
-        <span className='min-w-44 text-end'>
+        <span className='min-w-44 text-end md:text-base text-lg'>
           {
             !loading ? data.created_at.split('T')[0] : (
               <SkeletonLoader
