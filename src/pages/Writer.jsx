@@ -55,7 +55,7 @@ const Writer = () => {
   }
 
   return (
-    <div className='dark:bg-slate-950 slate-50 p-2 h-screen flex flex-col justify-center items-start select-none font-raleway tracking-wide'>
+    <div className='dark:bg-zinc-900 slate-50 p-2 h-screen flex flex-col justify-center items-start select-none font-raleway tracking-wide'>
       <button
         className='absolute top-1 right-2 opacity-0 hover:opacity-100 bg-light-blue dark:bg-darker-blue hover:bg-dark-blue text-white p-2 rounded-md active:scale-95 duration-500'
         onClick={onPressLogout}
@@ -72,7 +72,7 @@ const Writer = () => {
       <TextEditor value={value} setValue={setValue} />  
 
       <button
-        className='bg-light-blue dark:bg-darker-blue hover:bg-dark-blue text-white w-44 p-2 rounded-md active:scale-95 duration-500'
+        className='bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-600 dark:hover:bg-neutral-500 hover:text-white text-stone-600 dark:text-neutral-400 font-semibold w-44 p-2 rounded-md active:scale-95 duration-200'
         onClick={onPressSubmit}
       >Submit</button>
 
