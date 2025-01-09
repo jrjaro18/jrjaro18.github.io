@@ -59,7 +59,7 @@ const Posts = () => {
               {
                 [1, 2, 3].map((i) => (
                   <div key={i} className='h-44 relative md:w-[32%] w-full cursor-none select-none my-1'>
-                    <SkeletonLoader height='100%' width='100%' background={localStorage.getItem('theme') === 'dark' ? '#141415' : '#d7d7d7'} />
+                    <SkeletonLoader height='100%' width='100%' background={localStorage.getItem('theme') === 'dark' ? '#02021d' : '#d7d7d7'} />
                   </div>
                 ))
               }
