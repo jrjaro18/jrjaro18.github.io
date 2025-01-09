@@ -30,14 +30,14 @@ const Post = () => {
 
   return (
     <div  id='post' className='selection:bg-light-blue bg-slate-50 min-h-screen overflow-hidden text-black sm:px-20
-     px-2 sm:pt-6 pt-2 font-montserrat dark:bg-slate-950 dark:text-white pb-10'>
+     px-3 sm:pt-6 pt-2 font-montserrat dark:bg-slate-950 dark:text-white pb-10'>
       <div className='text-2xl my-2 text-justify'>
         {
           !loading ? data.title : (
             <SkeletonLoader
               height="7vh"
               width="100%"
-              background={localStorage.getItem('theme') === 'dark' ? '#242526' : '#d7d7d7'}
+              background={localStorage.getItem('theme') === 'dark' ? '#02021d' : '#d7d7d7'}
             />
           )
         }
@@ -51,7 +51,7 @@ const Post = () => {
               <SkeletonLoader
                 height="6vh"
                 width={"100%"}
-                background={localStorage.getItem('theme') === 'dark' ? '#242526' : '#d7d7d7'}
+                background={localStorage.getItem('theme') === 'dark' ? '#02021d' : '#d7d7d7'}
               />
             )
           }
@@ -64,7 +64,7 @@ const Post = () => {
           <SkeletonLoader
             height="76vh"
             width="100%"
-            background={localStorage.getItem('theme') === 'dark' ? '#242526' : '#d7d7d7'}
+            background={localStorage.getItem('theme') === 'dark' ? '#02021d' : '#d7d7d7'}
           />
         )
       }
