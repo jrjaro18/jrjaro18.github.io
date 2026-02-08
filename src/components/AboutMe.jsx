@@ -7,7 +7,7 @@ function AboutMe() {
                 What I do ?
             </span>
             <div className='text-justify sm:mt-2 mt-3 w-full flex flex-wrap gap-y-5 sm:justify-normal justify-evenly items-center sm:text-base text-lg leading-relaxed'>
-                my work involves building and maintaining an event driven low latency, high throughput financial systems using Springboot, Kafka and Aerospike, that is consumed by various downstream services critical to bank operations via events or apis
+                my work involves building and maintaining an event driven low latency, high throughput financial system using Springboot, Kafka and Aerospike, which is consumed by various downstream services critical for banking operations either via events or apis.
             </div>
         </div>
   )
