@@ -43,5 +43,6 @@ input::-ms-reveal {
 }
 
 #post strong {
-    font-weight:bold
+    font-weight:bold;
+    color:rgb(87, 149, 247);
 }

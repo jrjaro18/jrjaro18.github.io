@@ -7,28 +7,19 @@ const Introduction = () => {
     const navigate = useNavigate()
     return (
         <>
-            <div className='text-2xl text-left sm:text-lg sm:p-0 p-2.5'>Hello! <br className='sm:hidden' />I am Rohan Jaiswal :D</div>
+            <div className='text-2xl text-left sm:text-lg sm:p-0 px-0.5 pb-1.5'>Hello! <br className='sm:hidden' />I am Rohan Jaiswal :D</div>
             <ul className='mt-2 list-inside tracking-wide list-disc sm:text-base text-lg flex flex-col gap-y-4 sm:gap-y-2'>
                 <li>
-                    i am a <span className='text-dark-blue hover:text-darker-blue dark:hover:text-lighter-blue font-light duration-300 font-montserrat tracking-wide cursor-pointer ' onClick={() => {
-                        setToggle(!toggle)
-                    }}>
-                        {
-                            toggle ? 'YA-CS' : 'YET ANOTHER COMPUTER SCIENCE'
-                        }
-                    </span> grad from '25 batch
+                    Low Latency Financial Systems <br className='sm:hidden' /> <span className='sm:ml-0 ml-5' />@<a href='https://www.linkedin.com/company/idfcfirstbank' className='text-dark-blue hover:text-darker-blue dark:hover:text-lighter-blue text-5 duration-300 ml-1 tracking-wide font-light font-montserrat' target='_blank' rel='noreferrer'>IDFC FIRST BANK</a>
                 </li>
                 <li className=''>
-                    i have completed my <br className='sm:hidden' /> <span className='sm:ml-0 ml-5' />engineering from<a href='https://maps.app.goo.gl/sb9LQSaBfD9gRgnPA' className='text-dark-blue hover:text-darker-blue dark:hover:text-lighter-blue text-5 duration-300 ml-1 tracking-wide font-light font-montserrat' target='_blank' rel='noreferrer'>SPIT</a>, Mumbai
-                </li>
-                <li className=''>
-                    its been an year since i joined<a href='https://www.linkedin.com/company/idfcfirstbank' className='text-dark-blue hover:text-darker-blue dark:hover:text-light-blue text-5 duration-300 ml-1 tracking-wide font-light font-montserrat' target='_blank' rel='noreferrer'>IDFC</a>,<br className='sm:hidden' /><span className='sm:ml-0 ml-5' /> including a 6 month internship
+                    CS '25 from<a href='https://maps.app.goo.gl/sb9LQSaBfD9gRgnPA' className='text-dark-blue hover:text-darker-blue dark:hover:text-lighter-blue text-5 duration-300 ml-1 tracking-wide font-light font-montserrat' target='_blank' rel='noreferrer'>SPIT</a>, Mumbai
                 </li>
                 <li className=''>
                     i call myself a full stack developer, <br className='sm:hidden' /> <span className='sm:ml-0 ml-5' /> more of a backend guy tho :P
                 </li>
                 <li className=''>
-                    i like making mobile apps in react <br className='sm:hidden' /> <span className='sm:ml-0 ml-5' /> native and tailwind
+                    i also build cross-platform<br className='sm:hidden' /> <span className='sm:ml-0 ml-5' /> mobile apps in react native
                 </li>
                 <li className=''>
                     connect with me on:
