@@ -26,7 +26,7 @@ const Posts = () => {
   const navigate = useNavigate()
   return (
     <>
-      <div className='mt-4'>
+      <div className='sm:mt-3 mt-4'>
         <div className='select-none text-xl text-left sm:text-lg flex sm:gap-5 gap-0 justify-between items-center'>
           <div>
             Posts
@@ -37,7 +37,7 @@ const Posts = () => {
         </div>
         {
           !loading ? (
-            <div className='mt-4 md:justify-start flex flex-wrap gap-[2%] gap-y-4'>
+            <div className='sm:mt-3 mt-4 md:justify-start flex flex-wrap gap-[2%] gap-y-4'>
               {
                 posts.map((post) => (
                   <div key={post.id} className='h-40 relative md:w-[32%] w-full border-[2px] border-black dark:border-slate-50 p-2 cursor-pointer select-none active:scale-[0.98] duration-300 hover:-translate-y-1 my-1'

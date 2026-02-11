@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    <div className='mt-5'>
+    <div className='sm:mt-5 mt-4'>
             <span className='text-xl text-left sm:text-lg select-none'>
                 What I do ?
             </span>
