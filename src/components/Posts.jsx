@@ -8,7 +8,7 @@ import SkeletonLoader from 'tiny-skeleton-loader-react'
 const Posts = () => {
 
   const [posts, setPosts] = useState([])
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     const fetchPosts = async () => {
       const { data, error } = await supabase.from('Blogs').select(`id, created_at, title`).order('created_at', { ascending: false })
@@ -32,7 +32,7 @@ const Posts = () => {
             Posts
           </div>
           <div>
-            {loading && <img src={loader} className='h-4 w-4' alt="Loading..." />}
+            {loading && <SkeletonLoader height='20px' width='20px' radius={'20px'} background={localStorage.getItem('theme') === 'dark' ? '#02021d' : '#d7d7d7'} />}
           </div>
         </div>
         {
