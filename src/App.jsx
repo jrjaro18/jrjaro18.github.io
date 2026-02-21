@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import NewHome from './pages/NewHome'
 import OldHome from './pages/OldHome'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Post from './pages/Post'
 import SB_Auth from './pages/SB_Auth'
 import Writer from './pages/Writer'
@@ -34,7 +34,7 @@ function App() {
 
 
   return (
-    <BrowserRouter basename="/">
+    <HashRouter basename="/">
       <Routes>
         <Route path='*' element={<NewHome />} />
         <Route path='/post/:id' element={<Post />} />
@@ -52,7 +52,7 @@ function App() {
           </div>
         </div>
       </>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
